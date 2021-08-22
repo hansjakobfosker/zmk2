@@ -65,9 +65,9 @@
 //                           |     |         |     |  //  |     |         |     |
                         
                         bindings = <
-   &none       &kp LA(LC(Q)) &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
-   &none       &none         &none       &none       &kp LGUI(LSHFT(LC(N4))) &none             &none       &kp K_VOL_UP  &none       &none       &none       &none    
-   &none       &none         &none       &none       &none                   &none             &none       &kp K_VOL_DN  &none       &none       &none       &none    
+   &none       &none         &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
+   &none       &none         &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
+   &none       &none         &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
                                          &none       &none                   &none             &none       &none         &none    
                         >;
                 };
