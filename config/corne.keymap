@@ -65,10 +65,10 @@
 //                           |     |         |     |  //  |     |         |     |
                         
                         bindings = <
-   &none       &none         &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
-   &none       &none         &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
-   &none       &none         &none       &none       &none                   &none             &none       &none         &none       &none       &none       &none    
-                                         &none       &none                   &none             &none       &none         &none    
+   &none       &kp LG(LC(Q)) &none       &none              &none                   &none             &none       &none         &none       &none       &none       &none    
+   &none       &none         &none       &kp LG(LS(LC(N4))) &none                   &none             &none       &none         &none       &none       &none       &none    
+   &none       &none         &none       &none              &none                   &none             &none       &none         &none       &none       &none       &none    
+                                         &none              &none                   &none             &none       &none         &none    
                         >;
                 };
         };
