@@ -10,14 +10,14 @@
 
 / {     
 
-     //   combos {
-     //           compatible = "zmk,combos";
-     //           combo_layer3 {
-     //                   timeout-ms = <50>;
-     //                   key-positions = <39 38>;
-     //                   bindings = <&mo 3>;
-     //           };
-     //   };
+       combos {
+                compatible = "zmk,combos";
+                combo_layer3 {
+                        timeout-ms = <50>;
+                        key-positions = <39 38>;
+                        bindings = <&mo 3>;
+                };
+       };
          
         keymap {
                 compatible = "zmk,keymap";
@@ -26,44 +26,44 @@
 // -----------------------------------------------------------------------------------------
 // | ESC  |  Q  |  d  |  r  |  w  |  b  | // |  j  |  f   |  u  |  p  |  ;  | BKSP |
 // | TAB  |  a  |  s  |  h  |  t  |  g  | // |  y  |  n   |  e  |  o  |  i  | ENT  |
-// | SHFT |  z  |  x  |  m  |  c  |  v  | // |  k  |  l   |  ,  |  .  |  /  | ESC  |
+// | LALT |  z  |  x  |  m  |  c  |  v  | // |  k  |  l   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | SHFT| L1  | // | L2  |  SPC | ENT |
                        
                        bindings = <
-   &kp ESC     &kp Q     &kp D      &kp R   &kp W   &kp B     &kp J    &kp F   &kp U      &kp P    &kp SEMI  &kp BSPC
-   &kp TAB     &kp A     &kp S      &kp H   &kp T   &kp G     &kp Y    &kp N   &kp E      &kp O    &kp I     &kp RET
-   &kp LSHFT   &kp Z     &kp X      &kp M   &kp C   &kp V     &kp K    &kp L   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-               &kp LGUI  &kp LSHIFT &mo 1   &mo 2   &kp SPACE &kp RET
+   &kp ESC     &kp Q          &kp D      &kp R   &kp W   &kp B     &kp J    &kp F   &kp U      &kp P    &kp SEMI  &kp BSPC
+   &kp TAB     &kp A          &kp S      &kp H   &kp T   &kp G     &kp Y    &kp N   &kp E      &kp O    &kp I     &kp RET
+   &kp LALT    &kp Z          &kp X      &kp M   &kp C   &kp V     &kp K    &kp L   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+               &mt LGUI RET   &kp LSHIFT &mo 1   &mo 2   &kp SPACE &mt LGUI RET
                         >;
                 };
                 
                 layer_1 {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !      |  @  |  #  |  $  |  %  | // |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL | ALT + A |     |     |     |     | // |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | CTRL | å.      |     |     |     |     | // |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |         |     |     |     |     | // |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                        |     |     | L3  | // |     |     |     |
+//                        |     |     |     | // |     |     |     |
                        
                        bindings = <
    &kp  TAB  &kp EXCL   &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &kp LA(A)  &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans     &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	       &trans   &trans   &mo 3       &trans    &trans    &trans
+                    	       &trans   &trans  &none       &none    &trans    &trans
                         >;
                 };
                 
                 layer_2 {
 // -----------------------------------------------------------------------------------------
 // |      |  1  |  2  |  3  |  4  |  5  | // |  6  |  7  |  8  |  9  |  0      | ALT + BKSP |
-// |      |     |     |     |     |     | // |     | LFT |  UP | RGT | ALT + o | ALT + sqt  |
+// |      |     |     |     |     |     | // |     | LFT |  UP | RGT |  Ø      | Æ          |
 // |      |     |     |     |     |     | // |     |     | DWN |     |         |            |
-//                    |     |     |     | // |  L3 |     |     |
+//                    |     |     |     | // |     |     |     |
                         
-                        bindings = <
+                        bindings = <                     
    &trans        &kp N1        &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8     &kp N9    &kp N0     &kp LA(BSPC)
    &trans        &trans        &trans       &trans       &trans       &trans         &trans   &kp LEFT &kp UP     &kp RIGHT &kp LA(O)  &kp LA(SQT)
    &trans        &trans        &trans       &trans       &trans       &trans         &trans   &trans   &kp DOWN   &trans    &trans     &trans
-                          	            &trans       &trans       &trans         &mo 3    &trans   &trans
+                              	         &trans       &trans       &trans         &none    &trans   &trans
                         >;
                 };
                 
