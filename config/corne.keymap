@@ -25,31 +25,31 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  Q  |  d  |  r  |  w  |  b  | // |  j  |  f   |  u  |  p  |  ;  | BKSP |
-// | TAB  |  a  |  s  |  h  |  t  |  g  | // |  y  |  n   |  e  |  o  |  i  | ENT  |
-// | LALT |  z  |  x  |  m  |  c  |  v  | // |  k  |  l   |  ,  |  .  |  /  | ESC  |
+// | ESC  |  Q  |  d  |  r  |  w  |  b  | // |  j  |  f   |  u  |  p  |  ;  | BKSP  |
+// | TAB  |  a  |  s  |  h  |  t  |  g  | // |  y  |  n   |  e  |  o  |  i  | ENT   |
+// | LALT |  z  |  x  |  m  |  c  |  v  | // |  k  |  l   |  ,  |  .  |  /  | RCTRL |
 //                    | GUI | SHFT| L1  | // | L2  |  SPC | ENT |
                        
                        bindings = <
    &kp ESC     &kp Q          &kp D      &kp R   &kp W   &kp B     &kp J    &kp F   &kp U      &kp P    &kp SEMI  &kp BSPC
    &kp TAB     &kp A          &kp S      &kp H   &kp T   &kp G     &kp Y    &kp N   &kp E      &kp O    &kp I     &kp RET
-   &kp LALT    &kp Z          &kp X      &kp M   &kp C   &kp V     &kp K    &kp L   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+   &kp LALT    &kp Z          &kp X      &kp M   &kp C   &kp V     &kp K    &kp L   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
                &mt LGUI RET   &kp LSHIFT &mo 1   &mo 2   &kp SPACE &mt LGUI RET
                         >;
                 };
                 
                 layer_1 {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !      |  @  |  #  |  $  |  %  | // |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL | å.      |     |     |     |     | // |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |         |     |     |     |     | // |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |      |  !      |  @  |  #  |  $  |  %  | // |  &  |  $  |  {  |  }  |  ^  |      |
+// |      | å.      |  "  |  '  |  `  |     | // |  ~  |  \  |  (  |  )  |     |      |
+// |      |    (    |  )  |  =  |  >  |  {  | // |  _  |  |  |  [  |  ]  |     |      |
 //                        |     |     |     | // |     |     |     |
                        
                        bindings = <
-   &kp  TAB  &kp EXCL   &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp LA(A)  &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans     &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	       &trans   &trans  &none       &none    &trans    &trans
+   &trans   &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp PRCNT   &kp AMPS    &kp DLLR   &kp LBRC    &kp RBRC  &kp CARET   &trans
+   &trans   &kp LA(A)  &kp DQT   &kp SQT   &kp GRAVE  &trans      &kp TILDE   &kp BLSH   &kp LPAR    &kp RPAR  &trans      &trans
+   &trans   &kp LPAR   &kp RPAR  &kp EQUAL &kp GT     &kp LBRC    &kp UNDER   &kp PIPE   &kp LBKT    &kp RBKT  &trans      &trans
+                    	            &trans    &trans     &none       &none       &trans     &trans
                         >;
                 };
                 
